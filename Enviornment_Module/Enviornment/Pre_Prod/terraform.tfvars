@@ -7,6 +7,11 @@ RGS = {
     name     = "rg_testbud"
     location = "centralindia"
   }
+
+  rg3 = {
+    name     = "rg_prodbud"
+    location = "centralindia"
+  }
 }
 
 STG = {
