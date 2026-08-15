@@ -1,0 +1,2 @@
+variable "RGS" {}
+variable "STG" {}
