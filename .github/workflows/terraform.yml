@@ -18,9 +18,9 @@ permissions:
 env:
   TF_WORKING_DIR: Enviornment_Module/Enviornment/Pre_Prod
   ARM_USE_OIDC: true
-  ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
-  ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-  ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+  ARM_CLIENT_ID: "0eeadee6-8ebd-4f8d-a623-b70a9252d09a"
+  ARM_TENANT_ID: "d9a3ba78-3cae-4c44-bff1-be2068ede218"
+  ARM_SUBSCRIPTION_ID: "1c33e61b-5e6d-4c5a-bf31-9ff658d80bc7"
 
 jobs:
   terraform-plan:
@@ -34,9 +34,9 @@ jobs:
       - name: Azure Login
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          client-id: "0eeadee6-8ebd-4f8d-a623-b70a9252d09a"
+          tenant-id: "d9a3ba78-3cae-4c44-bff1-be2068ede218"
+          subscription-id: "1c33e61b-5e6d-4c5a-bf31-9ff658d80bc7"
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
